@@ -13,7 +13,7 @@ import { generateTimeSeriesData } from './data/topicData';
 function App() {
   const [selectedTopics, setSelectedTopics] = useState([0, 3, 4, 7, 9, 13]);
   const [yearRange, setYearRange] = useState([1950, 2000]);
-  const [documents, setDocuments] = useState(SAMPLE_DOCUMENTS);
+  const [documents] = useState(SAMPLE_DOCUMENTS);
   const [timeSeriesData] = useState(generateTimeSeriesData());
   const [hoveredDocument, setHoveredDocument] = useState(null);
 
